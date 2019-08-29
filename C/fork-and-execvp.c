@@ -20,6 +20,9 @@ int main(int argc, char *argv[]){
 		}else if(pid == 0){
 			//child
 			//execute
+			//////////////////////////////////////////////////
+			//MAKE SURE THE ARRAY argvNew IS NULL TERMINATED//
+			//////////////////////////////////////////////////
 			if(execvp(argvNew[0], argvNew) < 0){
 				printf("execute error\n");
 				exit(1);
