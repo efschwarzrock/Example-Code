@@ -23,16 +23,14 @@ int main(int argc, char *argv[]){
 	struct timeval wcStart;
 	struct timeval wcEnd;
 	
-		//start timer
-		gettimeofday(&wcStart, NULL);
-	  //code
-    
-    //code
-    //end timer
-	  gettimeofday(&wcEnd, NULL);
-		printf("World-clock time : %ld\n", ((wcEnd.tv_sec*1000000 
-			+ wcEnd.tv_usec) - (wcStart.tv_sec * 1000000 +
-			 wcStart.tv_usec)));	
+	//start time
+	gettimeofday(&wcStart, NULL);
+	//code
+	
+	//code
+        //end timer
+	gettimeofday(&wcEnd, NULL);
+	printf("World-clock time : %ld\n", ((wcEnd.tv_sec*1000000 + wcEnd.tv_usec) - (wcStart.tv_sec * 1000000 + wcStart.tv_usec)));	
 			
 		
 }
