@@ -5,7 +5,7 @@
 void main(int argc, char* argv){
   char userinputstr[stringsize];
   bool badinput;
-  if(fgets(mystr, stringsize, stdin) == NULL || strcmp(mystr, "\n") == 0){
+  if(fgets(userinputstr, stringsize, stdin) == NULL || strcmp(userinputstr, "\n") == 0){
       badinput = true;
   }else{
     dostuff();
