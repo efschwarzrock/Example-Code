@@ -1,3 +1,0 @@
-char* ptr1=0;
-long nr_l = strtol(argv[1],&ptr1,10);//get the NR
-size = (int)nr_l;
